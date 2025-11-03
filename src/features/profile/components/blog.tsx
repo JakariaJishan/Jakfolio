@@ -6,10 +6,10 @@ import { Button } from "@/components/ui/button";
 import { PostItem } from "@/features/blog/components/post-item";
 import { getAllPosts } from "@/features/blog/data/posts";
 
+import { BLOGS } from "../data/blogs";
 import { Panel, PanelHeader, PanelTitle } from "./panel";
 
 export function Blog() {
-  const allPosts = getAllPosts();
 
   return (
     <Panel id="blog">
@@ -24,8 +24,8 @@ export function Blog() {
         </div>
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          {allPosts.slice(0, 4).map((post) => (
-            <PostItem key={post.slug} post={post} />
+          {BLOGS.slice(0, 4).map((post) => (
+            <PostItem key={post.id} post={post} />
           ))}
         </div>
       </div>

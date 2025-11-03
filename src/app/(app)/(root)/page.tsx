@@ -56,14 +56,14 @@ export default function Page() {
         <Projects />
         <Separator />
 
-        <Awards />
-        <Separator />
-
+        {/* <Awards /> */}
+        {/* <Separator /> */}
+{/* 
         <Certifications />
-        <Separator />
+        <Separator /> */}
 
-        <Brand />
-        <Separator />
+        {/* <Brand />
+        <Separator /> */}
       </div>
     </>
   );
