@@ -2,6 +2,45 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+  id: "akhirahlab",
+  companyName: "Akhirahlab",
+  companyLogo: "/images/akhirahlab.jpg",
+  positions: [
+    {
+      id: "akhirahlab-fullstack-dev",
+      title: "Full Stack Developer",
+      employmentPeriod: {
+        start: "11.2025", 
+        end: "Present",
+      },
+      employmentType: "Full-time",
+      icon: "code",
+      description: `- Developed and maintained a full-featured School Management Portal, implementing modules for students, teachers, exams, attendance, fees, and user access control using Laravel, PHP, and MySQL.
+- Optimized and refactored existing systems to enhance performance, improve workflows, and ensure smooth user experience for school administrators and staff.
+- Managed server operations including migrating school portals between servers, configuring DNS, deploying sites, and handling backups, database imports, SSL, and environment setup.
+- Diagnosed and resolved production issues such as 404/500 errors, PHP configuration problems, and hosting environment conflicts on hPanel and cPanel.
+- Built responsive and modern interfaces using Blade, Tailwind CSS, Bootstrap, and integrated APIs to support dashboards, reporting, and real-time features.
+- Ensured security and reliability by configuring firewalls (UFW), optimizing server resources, and monitoring application performance.`,
+      skills: [
+        "PHP",
+        "Laravel",
+        "MySQL",
+        "Blade",
+        "Bootstrap",
+        "Tailwind CSS",
+        "Server Management",
+        "DNS & Hosting",
+        "SSL",
+        "API Integration",
+        "Troubleshooting",
+        "Team Collaboration",
+      ],
+      isExpanded: true,
+    },
+  ],
+  isCurrentEmployer: true,
+},
+  {
     id: "wemaxdevs",
     companyName: "WemaxDevs",
     companyLogo: "", // No logo provided in resume
@@ -36,7 +75,7 @@ export const EXPERIENCES: Experience[] = [
         isExpanded: true,
       },
     ],
-    isCurrentEmployer: true,
+    isCurrentEmployer: false,
   },
   {
     id: "devspace",
