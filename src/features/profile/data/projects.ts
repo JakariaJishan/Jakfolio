@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
     period: {
       start: "2023",
     },
-    link: "https://github.com/jakariajishan/ecommerce-admin-panel", // Placeholder; replace with actual GitHub link
+    link: "https://github.com/JakariaJishan/next-ecommerce-api", // Placeholder; replace with actual GitHub link
     skills: [
       "Laravel",
       "Next.js",
