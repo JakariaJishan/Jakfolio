@@ -11,7 +11,7 @@ export const EXPERIENCES: Experience[] = [
         title: "Laravel Developer",
         employmentPeriod: {
           start: "05.2025",
-          end: "Present",
+          end: "11.2025",
         },
         employmentType: "Full-time",
         icon: "code",
