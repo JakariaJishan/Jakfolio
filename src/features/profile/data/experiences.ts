@@ -2,6 +2,39 @@ import type { Experience } from "../types/experiences";
 
 export const EXPERIENCES: Experience[] = [
   {
+    id: "wpxpo",
+    companyName: "WPXPO",
+    companyLogo: "/images/wpxpo.svg",
+    positions: [
+      {
+        id: "wpxpo-software-eng",
+        title: "Software Engineer",
+        employmentPeriod: {
+          start: "12.2025",
+        },
+        employmentType: "Full-time",
+        icon: "code",
+        description: `- Maintain and add new features to WowAddons (Product Addons), a WordPress and WooCommerce plugin for product add-on fields, using PHP, JavaScript and React.
+- Build and extend Pro features of the plugin, including fields, pricing options and builder controls, using PHP, WordPress hooks, REST API endpoints and React.
+- Keep new Pro releases backward compatible with older versions of the free plugin to prevent site-breaking errors after updates.
+- Resolved over 50 critical bugs and compatibility issues across WordPress, WooCommerce, and plugin versions, decreasing support escalations by 35% within six months.`,
+        skills: [
+          "PHP",
+          "JavaScript",
+          "React",
+          "WordPress",
+          "WooCommerce",
+          "WordPress Hooks",
+          "REST API",
+          "Debugging",
+          "Teamwork",
+        ],
+        isExpanded: true,
+      },
+    ],
+    isCurrentEmployer: true,
+  },
+  {
     id: "wemaxdevs",
     companyName: "WemaxDevs",
     companyLogo: "", // No logo provided in resume
@@ -36,7 +69,7 @@ export const EXPERIENCES: Experience[] = [
         isExpanded: true,
       },
     ],
-    isCurrentEmployer: true,
+    isCurrentEmployer: false,
   },
   {
     id: "devspace",
