@@ -46,10 +46,8 @@ I'm also the creator of an [E-commerce Admin Panel](https://github.com/JakariaJi
 
 Let's connect and collaborate!
   `,
-  avatar: "/images/brand-ghibli1.png",
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-light.png?t=1759581475",
-  namePronunciationUrl: "/audio/chanhdai.mp3",
+  avatar: "/images/jakaria.jpg",
+  ogImage: "/images/jakaria.jpg",
   keywords: [
     "jakariajishan",
     "kokolive",

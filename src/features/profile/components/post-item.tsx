@@ -1,18 +1,24 @@
 import dayjs from "dayjs";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
-import type { Post } from "@/features/blog/types/post";
 import { cn } from "@/lib/utils";
 
-export function PostItem({
-  post,
-  shouldPreloadImage,
-}) {
+type Post = {
+  id: string;
+  title: string;
+  createdAt: string;
+  link: string;
+  image?: string;
+  new?: boolean;
+};
+
+export function PostItem({ post }: { post: Post }) {
   return (
-    <Link
-      href={`${post.link}`}
+    <a
+      href={post.link}
+      target="_blank"
+      rel="noopener noreferrer"
       className={cn(
         "group/post flex flex-col gap-2 p-2",
         "max-sm:screen-line-before max-sm:screen-line-after",
@@ -27,7 +33,6 @@ export function PostItem({
             width={1200}
             height={630}
             quality={100}
-            priority={shouldPreloadImage}
             unoptimized
           />
 
@@ -55,6 +60,6 @@ export function PostItem({
           </dd>
         </dl>
       </div>
-    </Link>
+    </a>
   );
 }

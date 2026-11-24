@@ -1,16 +1,12 @@
 import { ArrowRightIcon } from "lucide-react";
-import Link from "next/link";
-import React from "react";
 
 import { Button } from "@/components/ui/button";
-import { PostItem } from "@/features/blog/components/post-item";
-import { getAllPosts } from "@/features/blog/data/posts";
 
 import { BLOGS } from "../data/blogs";
 import { Panel, PanelHeader, PanelTitle } from "./panel";
+import { PostItem } from "./post-item";
 
 export function Blog() {
-
   return (
     <Panel id="blog">
       <PanelHeader>
@@ -32,10 +28,14 @@ export function Blog() {
 
       <div className="screen-line-before flex justify-center py-2">
         <Button variant="default" asChild>
-          <Link href="/blog">
+          <a
+            href="https://medium.com/@jakariajishan006"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             All Posts
             <ArrowRightIcon />
-          </Link>
+          </a>
         </Button>
       </div>
     </Panel>
