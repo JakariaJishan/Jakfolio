@@ -4,7 +4,7 @@ export const EXPERIENCES: Experience[] = [
   {
     id: "wpxpo",
     companyName: "WPXPO",
-    companyLogo: "/images/wpxpo.svg",
+    companyLogo: "/images/wpxpo1.jpeg",
     positions: [
       {
         id: "wpxpo-software-eng",
