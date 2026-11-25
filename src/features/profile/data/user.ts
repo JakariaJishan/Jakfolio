@@ -20,6 +20,11 @@ export const USER: User = {
   jobTitle: "Software Engineer",
   jobs: [
     {
+      title: "Software Engineer",
+      company: "WPXPO",
+      website: "https://wpxpo.com/",
+    },
+    {
       title: "Laravel Developer",
       company: "WemaxDevs",
       website: "https://wemaxdevs.com/",
